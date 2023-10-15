@@ -40,16 +40,7 @@ let todos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST)) || [
     name: 'Read for 1 hour',
     completed: false,
   },
-  {
-    id: '5',
-    name: 'Pick up groceries',
-    completed: false,
-  },
-  {
-    id: '6',
-    name: 'Complete Todo App on Frontend Mentor',
-    completed: false,
-  },
+   
 ];
 
 const focusInput = () => {
