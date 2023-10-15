@@ -46,3 +46,311 @@
 *::after {
   box-sizing: border-box;
 }
+
+html {
+    box-sizing: initial;
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--Very-Dark-Grayish-Blue);
+    background: var(--body-background);
+    font-size: 1.2rem;
+    min-height: 100vh;
+    margin: 0;
+    user-select: none;
+  }
+  
+  .blue-background-class {
+    background: var(--Bright-Blue);
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 5px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--input-and-card);
+  }
+  
+  .header {
+    min-height: 30vh;
+    background: var(--background-image) no-repeat left center/cover;
+    width: 100%;
+  }
+  
+  main {
+    max-width: 540px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr auto 1fr;
+    column-gap: 1rem;
+    position: relative;
+    bottom: 16rem;
+    padding: 1rem;
+    height: 4rem;
+  }
+  
+  .content {
+    display: grid;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .content h2 {
+    color: var(--Very-Light-Gray);
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .toggle-icon {
+    position: absolute;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .addTodo {
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    background: var(--input-and-card);
+    border-radius: 5px;
+    margin-bottom: 0.1rem;
+    box-shadow: -5px 0 20px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .addTodo input {
+    background: var(--input-and-card);
+    border: none;
+    width: 100%;
+    height: 5rem;
+    padding: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    color: var(--text-color);
+    caret-color: var(--Bright-Blue);
+  }
+  
+  input::placeholder {
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  input:focus::placeholder {
+    opacity: 0.2;
+  }
+  
+  .alert {
+    color: var(--alert);
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem 3vw 2rem);
+    font-weight: 700;
+    text-shadow: var(--text-shadow);
+    display: none;
+  }
+  
+  .card {
+    background: var(--input-and-card);
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    min-height: fit-content;
+    border-radius: 5px;
+    margin-top: 2rem;
+    box-shadow: -5px 0 20px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bottom {
+    display: grid;
+  }
+  
+  .items_left {
+    background: var(--input-and-card);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .p {
+    color: var(--Dark-Grayish-Blue);
+  }
+  
+  .buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--input-and-card);
+    min-width: 100%;
+    width: 100%;
+    padding: 2rem 0.8rem;
+    margin-top: 2rem;
+  }
+  
+  .buttons button {
+    margin-right: 2rem;
+    font-weight: 700;
+  }
+  
+  /* ========================= Buttons ======================== */
+  .btn {
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: inherit;
+    color: var(--Dark-Grayish-Blue);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .addNewBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    background: var(--input-and-card);
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .addNewBtn span:hover {
+    border: 1px solid var(--Very-Dark-Blue);
+  }
+  
+  .plusSign {
+    font-size: 1.99rem;
+  }
+  
+  .active {
+    color: var(--Bright-Blue);
+  }
+  
+  .task {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 1.5rem 0.8rem;
+    position: relative;
+  }
+  
+  li::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 6rem;
+    background: var(--Light-Grayish-Blue);
+    height: 1px;
+    opacity: var(--opacity);
+  }
+  
+  .tasks li:hover,
+  .tasks li:hover:last-child {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  .task:hover:last-child {
+    opacity: unset;
+    cursor: default;
+  }
+  
+  [type='checkbox'] {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .custom_checkbox {
+    display: inline-block;
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+    border: 1px solid var(--ceckbox-border);
+    border-radius: 50%;
+    margin-right: 1.2rem;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+  }
+  
+  [type='checkbox']:checked + label .custom_checkbox {
+    background-image: url('images/icon-check.svg'), var(--Check-Background);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: var(--Very-Light-Gray);
+  }
+  
+  [type='checkbox']:checked + label {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .task label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .task {
+    color: var(--text-color);
+  }
+  
+  .delete {
+    width: 1.1rem;
+    height: 1.1rem;
+    color: var(--Grayish-Blue);
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .all:hover,
+  .activeBtn:hover,
+  .completed:hover,
+  .clear:hover {
+    color: var(--btn-hover-color);
+  }
+  
+  
+  
+  
