@@ -352,5 +352,97 @@ html {
   }
   
   
+@media screen and (min-width: 950px) {
+    body {
+      font-size: 1.8rem;
+    }
+  
+    .header {
+      min-height: 31vh;
+    }
+  
+    main {
+      width: 100%;
+      height: max-content;
+      bottom: 22rem;
+      padding: 0.3rem;
+      height: 3rem;
+    }
+  
+    .content_title {
+      font-size: 3.9rem !important;
+      letter-spacing: 12px !important;
+    }
+  
+    .theme-switch {
+      height: 3.3rem;
+      width: 2.8rem;
+    }
+  
+    .icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .addTodo input {
+      margin-top: 2.05rem;
+      height: 5rem;
+      padding-bottom: 2.5rem !important;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  
+    input::placeholder {
+      position: absolute;
+    }
+  
+    .plusSign {
+      font-size: 2.1rem;
+    }
+  
+    .drag_text {
+      margin-bottom: 4rem;
+      font-size: 2rem;
+    }
+  
+    .custom_checkbox {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .delete {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  
+    .buttons {
+      margin-top: -7rem;
+      background: 0;
+    }
+  
+    .addTodo input {
+      font-size: 1.8rem;
+    }
+  
+    .buttons button {
+      margin-right: 2rem;
+      font-weight: 700;
+    }
+  
+    .btn {
+      z-index: 100;
+    }
+  
+    .clear {
+      z-index: 1000;
+      padding: 0.5rem;
+    }
+  
+    .drag_text {
+      margin-bottom: 1.8rem;
+      font-size: 1.4rem;
+    }
+  
+    
+  }
   
   
