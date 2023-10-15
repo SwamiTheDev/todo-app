@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+:root {
+  /* Primary colors */
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Darker-Grayish-Blue: hsl(237, 14%, 26%);
+
+  /* Dark Theme */
+  --body-background: hsl(235, 21%, 11%);
+  --background-image: url('images/bg-desktop-dark.jpg');
+  --input-and-card: hsl(235, 24%, 19%);
+  --text-color: hsl(0, 0%, 98%);
+  --btn-hover-color: hsl(0, 0%, 98%);
+  --ceckbox-border: hsl(0, 0%, 24%);
+  --Grayish-Blue: hsl(235, 19%, 35%);
+  --alert: hsl(230, 38%, 28%);
+  --text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.459), 1px -1px 0 rgba(255, 255, 255, 0.479),
+    -1px 1px 0 rgba(255, 255, 255, 0.473), 1px 1px 0 rgba(255, 255, 255, 0.466);
+  --opacity: 0.1;
+}
+
+[data-theme='light'] {
+  --body-background: hsl(236, 33%, 92%);
+  --background-image: url('images/bg-desktop-light.jpg');
+  --input-and-card: hsl(0, 0%, 98%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --text-color: hsl(236, 9%, 61%);
+  --btn-hover-color: hsl(236, 9%, 1%);
+  --ceckbox-border: hsl(0, 0%, 87%);
+  --Grayish-Blue: hsl(236, 33%, 92%);
+  --alert: hsl(253, 68%, 79%);
+  --text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(0, 0, 0, 0.4),
+    -1px 1px 0 rgba(0, 0, 0, 0.4), 1px 1px 0 rgba(0, 0, 0, 0.4);
+  --opacity: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
