@@ -370,7 +370,7 @@ backdrop-filter: blur( 4px );
  }
  @media screen and (max-width: 500px){
 .footer{
-    font-size: 10px !important;
+    font-size: 13px !important;
     letter-spacing: 1px;
 }
  }
